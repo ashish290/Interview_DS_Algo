@@ -19,11 +19,7 @@
 class Solution {
 public:
     int m, n;
-    vector<vector<int>> directions = {
-                {-1,0},
-        {0,-1},         {0,1},
-                {1, 0}
-    };
+    vector<vector<int>> directions = {{-1,0},{0,-1},{0,1},{1, 0}};
     
     bool isSafe(int i, int j) {
         return (i < m && i >= 0 && j < n && j >= 0);
